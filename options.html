@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Configuration - Ajax Loader for Google™</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="./css/options.css">
+	<link type="text/css" href="./css/jquery.jnotify.min.css" rel="stylesheet" media="all" />
+	<script type="text/javascript" src="./lib/jquery.min.js"></script>
+	<script type="text/javascript" src="./lib/jquery.jnotify.min.js"></script>
+</head>
+<body onLoad="restore_options()" class="body">
+<div class="pagina">  
+  <header>
+    <img src="icon128.png">
+    <h1 id="widget-name">Ajax Loader for Google™</h1>
+    <h2>Made by <span id="widget-author">Il&iacute;dio Martins</h2>
+  </header>
+  <section>
+    <p><a href='https://chrome.google.com/extensions/detail/ajagfhgoccdjcpdfmmjopehnlfgdjifo' target="_blank">Ajax Loader for Google™</a> is an extension that adds an ajax loader to the Google™ pages (<a href='https://gmail.com' target="_blank">Gmail</a>, <a href='https://www.google.com/calendar/' target="_blank">Google Calendar</a>, <a href='https://docs.google.com/' target="_blank">Google Docs</a>, <a href='http://maps.google.com/' target="_blank">Google Maps</a>, <a href='https://sites.google.com/' target="_blank">Google Sites</a>, <a href='http://www.google.com/reader/' target="_blank">Google Reader</a>, <a href='http://www.orkut.com/' target="_blank">Orkut</a> and <a href="https://plus.google.com/" target="_blank">Google+</a>).</p>
+    <h3>Choose your favorite loader:</h3>
+    <fieldset>  
+            <!-- 1-1 -->
+            <div class='option_input'><input id='ajaxloader0' name='ajaxloader' type='radio' value='css/indicator.css' title='Indicator / 指标' onclick='JavaScript:save_options(this,"Indicator")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_indicator.png' title='Indicator/ 指标'/></div>	
+            <div class='option_text'><span class='font_text' title='Indicator / 指标'>Indicator1 </span><a href="#apng"><img src='./images/warning.png' title="APNG format isn't standardized"/></a></div>	
+            <!-- 1-2 Google Default -->
+            <div class='option_input'><input id='ajaxloaderg' name='ajaxloader' type='radio' value='css/google.css' title='Google / 谷歌' onclick='JavaScript:save_options(this,"Google")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_google.gif' title='Google / 谷歌'/></div>	
+            <div class='option_text'><span class='font_text' title='Google / 谷歌'>Google</span></div>	    
+            <!-- 1-3 -->
+            <div class='option_input'><input id='ajaxloader1' name='ajaxloader' type='radio' value='css/circleball.css' onclick='JavaScript:save_options(this,"Circle ball")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_circleball.gif' title='Circle ball / 圈球'/></div>
+            <div class='option_text'><span class='font_text' title='Circle ball / 圈球'>Circleball</span></div>
+            <!-- 1-4 -->
+            <div class='option_input'><input id='ajaxloader2' name='ajaxloader' type='radio' value='css/bouncingball.css' title='Bouncing ball / 弹跳球' onclick='JavaScript:save_options(this,"Bouncing ball")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_bouncingball.gif' title='Bouncing ball / 弹跳球'/></div>	
+            <div class='option_text'><span class='font_text' title='Bouncing ball / 弹跳球'>Bouncing ball</span></div>			
+            <div style='clear:both;'></div> 
+            <!-- br -->   
+            <!-- 2-1 -->
+            <div class='option_input'><input id='ajaxloader3' name='ajaxloader' type='radio' value='css/facebook.css' title='Facebook / 注册Facebook！' onclick='JavaScript:save_options(this,"Facebook")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_facebook.gif' title='Facebook / 注册Facebook！'/></div>	
+            <div class='option_text'><span class='font_text' title='Facebook / 注册Facebook！'>Facebook</span></div>	
+            <!-- 2-2 -->
+            <div class='option_input'><input id='ajaxloader4' name='ajaxloader' type='radio' value='css/flower.css' title='Flower / 花' onclick='JavaScript:save_options(this,"Flower")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_flower.gif' title='Flower / 花'/></div>
+            <div class='option_text'><span class='font_text' title='Flower / 花'>Flower</span></div>   
+            <!-- 2-3 -->
+            <div class='option_input'><input id='ajaxloader5' name='ajaxloader' type='radio' value='css/kit.css' title='Kit / 试剂盒' onclick='JavaScript:save_options(this,"Kit")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_kit.gif' title='Kit / 试剂盒'/></div>	
+            <div class='option_text'><span class='font_text' title='Kit / 试剂盒'>Kit</span></div>			
+            <!-- 2-4 -->
+            <div class='option_input'><input id='ajaxloader6' name='ajaxloader' type='radio' value='css/roller.css' title='Roller / 辊' onclick='JavaScript:save_options(this,"Roller")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_roller.gif' title='Roller / 辊'/></div>	
+            <div class='option_text'><span class='font_text' title='Roller / 辊'>Roller</span></div>	
+            <!-- br -->
+            <div style='clear:both;'></div> 
+            <!-- 3-1 -->
+            <div class='option_input'><input id='ajaxloader7' name='ajaxloader' type='radio' value='css/snake.css' title='Snake / 蛇' onclick='JavaScript:save_options(this,"Snake")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_snake.gif' title='Snake / 蛇'/></div>
+            <div class='option_text'><span class='font_text' title='Snake / 蛇'>Snake</span></div>   
+            <!-- 3-2 -->
+            <div class='option_input'><input id='ajaxloader8' name='ajaxloader' type='radio' value='css/wheel.css' title='Wheel / 轮' onclick='JavaScript:save_options(this,"Wheel")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_wheel.gif' title='Wheel / 轮'/></div>	
+            <div class='option_text'><span class='font_text' title='Wheel / 轮'>Wheel</span></div>			
+            <!-- 3-3 -->
+            <div class='option_input'><input id='ajaxloader9' name='ajaxloader' type='radio' value='css/3drotation.css' title='3D Rotation / 三维旋转' onclick='JavaScript:save_options(this,"3d rotation")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_3drotation.gif' title='3d rotation / 三维旋转'/></div>	
+            <div class='option_text'><span class='font_text' title='3D Rotation / 三维旋转'>3d rotation</span></div>	
+            <!-- 3-4 -->
+            <div class='option_input'><input id='ajaxloader10' name='ajaxloader' type='radio' value='css/arrows.css' title='Arrows / 箭头 ' onclick='JavaScript:save_options(this,"Arrows")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_arrows.gif' title='Arrows / 箭头'/></div>
+            <div class='option_text'><span class='font_text' title='Arrows / 箭头'>Arrows</span></div>
+            <!-- br -->
+            <div style='clear:both;'></div>    
+            <!-- 4-1 -->
+            <div class='option_input'><input id='ajaxloader11' name='ajaxloader' type='radio' value='css/radar.css' title='Radar / 雷达' onclick='JavaScript:save_options(this,"Radar")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_radar.gif' title='Radar / 雷达'/></div>	
+            <div class='option_text'><span class='font_text' title='Radar / 雷达'>Radar</span></div>		
+            <!-- 4-2 -->
+            <div class='option_input'><input id='ajaxloader12' name='ajaxloader' type='radio' value='css/circleball1.css' title='Circle ball / 圈球' onclick='JavaScript:save_options(this,"Circleball")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_circleball1.gif' title='Circle ball / 圈球'/></div>
+            <div class='option_text'><span class='font_text' title='Circle ball / 圈球'>Circleball</span></div>    
+            <!-- 4-3 -->
+            <div class='option_input'><input id='ajaxloader13' name='ajaxloader' type='radio' value='css/refresh.css' title='Refresh / 刷新' onclick='JavaScript:save_options(this,"Refresh")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_refresh.gif' title='Refresh / '/></div>
+            <div class='option_text'><span class='font_text' title='Refresh / 刷新'>Refresh</span></div>            
+            <!-- 4-4-->
+            <div class='option_input'><input id='ajaxloader14' name='ajaxloader' type='radio' value='css/static.css' title='Static / 静态' onclick='JavaScript:save_options(this,"Static")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_static.png' title='Static / 静态'/></div>
+            <div class='option_text'><span class='font_text' title='Static / 静态'>Static</span></div>  
+            <!-- br -->
+            <div style='clear:both;'></div>             
+            <!-- 5-1-->
+            <div class='option_input'><input id='ajaxloader16' name='ajaxloader' type='radio' value='css/indicator2.css' title='Indicator / 指标' onclick='JavaScript:save_options(this,"Indicator2")'/></div>
+            <div class='option_image'><img src='./images/ajaxloader_indicator2.png' title='Indicator 2/ 指标'/></div>	
+            <div class='option_text'><span class='font_text' title='Indicator 2/ 指标'>Indicator2 <a href="#apng"><img src='./images/warning.png' title="APNG format isn't standardized"/></a></span></div>	
+            <!-- 5-2-->
+            <div class='option_input'><input id='ajaxloader17' name='ajaxloader' type='radio' value='css/spinner_v2_0.css' title='Indicator / 指标' onclick='JavaScript:save_options(this,"Google Spinner v2.0")'/></div>
+            <div class='option_image'><img src='./images/spinner_v2_0.gif' title='Google v2.0'/></div>	
+            <div class='option_text'><span class='font_text' title='Google 2'>Google v2.0</span></div>	            
+			<!-- 5-3-->
+            <div class='option_input'><input id='ajaxloader15' name='ajaxloader' type='radio' value='#random#' title='Random / 随机' onclick='JavaScript:save_options(this,"Random")'/></div>
+            <div class='option_image'> <b>?</b></div>
+            <div class='option_text'><span class='font_text' title='Random / 随机'>Random</span></div>
+    </fieldset>
+
+    <p>With this extension you can personalize <a href='https://gmail.com' target="_blank">Gmail</a>, <a href='https://www.google.com/calendar/' target="_blank">Google Calendar</a>, <a href='https://docs.google.com/' target="_blank">Google Docs</a>, <a href='http://maps.google.com/' target="_blank">Google Maps</a>, <a href='https://sites.google.com/' target="_blank">Google Sites</a>, <a href='http://www.google.com/reader/' target="_blank">Google Reader</a>, <a href='http://www.orkut.com/' target="_blank">Orkut</a> and <a href="https://plus.google.com/" target="_blank">Google+</a>  with an Animated Ajax Loader. This extension displays a loading image while requested content is being loaded by AJAX Requests.</p>
+    <div style='background-color:red;border: 15px solid #F36;margin-top:15px;margin-bottom:15px;padding:25px;'>
+	<p style="color:white;font-size:20px;font-weight:bold;"><img src='./images/warning_48.png' width="25" height="25"/> Warning:</p>
+    <hr style="color:white;"/>	   
+    <p style='color:white;'>To use this extension, you might need (<a name="apng" style='color:white;'>*</a>) to load APNG javascript module to Google Chrome. To do that please install an <a href='https://chrome.google.com/webstore/detail/ehkepjiconegkhpodgoaeamnpckdbblp?hl=en' target="_blank" style='color:white;'>APNG extension</a> <img src='./images/apng_logo.png' width="13" height="13" title='apng'/> for Google Chrome available at the following link:</p>
+    <center>
+      <p><a href='https://chrome.google.com/webstore/detail/ehkepjiconegkhpodgoaeamnpckdbblp?hl=en' target="_blank" style='color:white;'><img src='images/download.png' style='border:none;' title='download'/></a></p></center></div>
+    <span style="font-weight:bold;">About APNG format:</span> <a href='http://en.wikipedia.org/wiki/APNG' target="_blank">http://en.wikipedia.org/wiki/APNG</a>
+	<p><span style="font-weight:bold;">Support page:</span>	<a href='http://my.opera.com/ilidiomartins/blog/google-ajax-loader-opera-extension' target="_blank">http://my.opera.com/ilidiomartins/blog/google-ajax-loader-opera-extension</a></p>
+  </section>
+
+  <footer>
+    <p>Powered by the Google Chrome Browser <img src='./images/chrome_logo.png' width="13" height="13" title='Google Chrome'/> and APNG technologies <img src='./images/apng_logo.png' width="13" height="13" title='apng'/></p>
+  </footer>
+</div>
+<script type="text/javascript">
+// Saves options to localStorage.
+function save_options(obj,what) {  
+	if(obj.checked==true){
+	  localStorage["google_reader_ajaxloader"] =  obj.value;
+	  // Update status to let user know options were saved.
+	  var message = "<center><table><tr><td><img src='images/options_saved.png' style='width:24px;height:24px;'/></td><td> <span class='option_saved' title='Option Saved / 选项保存'>Option '"+what+"' Saved. Please reload Google pages!</span></td></tr></table></center>";
+	  $.jnotify(message, 5000);
+	}
+}
+// Restores input boxes state to saved value from localStorage.
+function restore_options() {
+	var ajxloader =  localStorage["google_reader_ajaxloader"];
+	if(typeof(ajxloader) == 'undefined' || ajxloader=="css/indicator.css"){
+	 	document.getElementById("ajaxloader0").checked = true;	
+	}else if( ajxloader=="css/google.css"){
+	 	document.getElementById("ajaxloaderg").checked = true;	
+	}else if(ajxloader=="css/circleball.css"){
+		document.getElementById("ajaxloader1").checked = true;
+	}else if(ajxloader=="css/bouncingball.css"){
+		document.getElementById("ajaxloader2").checked = true;
+	}else if(ajxloader=="css/facebook.css"){
+		document.getElementById("ajaxloader3").checked = true;
+	}else if(ajxloader=="css/flower.css"){
+		document.getElementById("ajaxloader4").checked = true;
+	}else if(ajxloader=="css/kit.css"){
+		document.getElementById("ajaxloader5").checked = true;
+	}else if(ajxloader=="css/roller.css"){
+		document.getElementById("ajaxloader6").checked = true;
+	}else if(ajxloader=="css/snake.css"){
+		document.getElementById("ajaxloader7").checked = true;
+	}else if(ajxloader=="css/wheel.css"){
+		document.getElementById("ajaxloader8").checked = true;
+	}else if(ajxloader=="css/3drotation.css"){
+		document.getElementById("ajaxloader9").checked = true;
+	}else if(ajxloader=="css/arrows.css"){
+		document.getElementById("ajaxloader10").checked = true;
+	}else if(ajxloader=="css/radar.css"){
+		document.getElementById("ajaxloader11").checked = true;
+	}else if(ajxloader=="css/circleball1.css"){
+		document.getElementById("ajaxloader12").checked = true;
+	}else if(ajxloader=="css/refresh.css"){
+		document.getElementById("ajaxloader13").checked = true;
+	}else if(ajxloader=="css/static.css"){
+		document.getElementById("ajaxloader14").checked = true;
+	}else if(ajxloader=="#random#"){
+		document.getElementById("ajaxloader15").checked = true;
+	}else if(ajxloader=="css/indicator2.css"){
+	 	document.getElementById("ajaxloader16").checked = true;	
+	}else if(ajxloader=="css/spinner_v2_0.css"){
+	 	document.getElementById("ajaxloader17").checked = true;	
+	}
+}
+</script>  
+</body>
+</html>
