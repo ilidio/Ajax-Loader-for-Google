@@ -1,0 +1,22 @@
+<widget xmlns="http://www.w3.org/ns/widgets"
+        id="https://addons.labs.opera.com/addons/extensions/details/google-ajax-loader/"
+        version="2.6.4">
+		<name short="Loader" xml:lang="en">Google Ajax Loader</name>
+		<description xml:lang="en">Google Ajax Loader is an extension that adds an ajax loader to the Google ™ pages (Gmail, Google Calendar, Google Docs, Google Maps, Google Reader and Google+).</description>
+		<author href="http://ilidio.martins.googlepages.com/"
+            email="ilidio.martins@gmail.com">
+    Ilídio Martins
+    </author>
+    <license href="http://www.opensource.org/licenses/mit-license.php">
+    Licensed under the MIT license
+    </license>
+    <icon src="icons/icon-64.png"/>
+	<content src="index.html" type="text/html" encoding="utf-8"/>	
+	<access origin="http://www.google.com/" subdomains="true"/>
+	<access origin="https://mail.google.com/" subdomains="true"/>
+	<access origin="https://docs.google.com/" subdomains="true"/>
+	<access origin="https://maps.google.com/" subdomains="true"/>
+	<access origin="https://www.google.com/" subdomains="true"/>
+	<access origin="http://sites.google.com/" subdomains="true"/>	
+	<access origin="https://sites.google.com/" subdomains="true"/>	
+</widget>
