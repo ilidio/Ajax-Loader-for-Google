@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>global HTML page</title>
+<script type="text/javascript">
+function respondToMessage(messageEvent) {
+    if (messageEvent.name == "getSettingValue") {
+        var value = safari.extension.settings.getItem(messageEvent.message);
+        safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("settingValueIs", value);
+    } 
+}
+safari.application.addEventListener("message",respondToMessage,false);
+</script>
+</head>
+<body>
+</body>
+</html>

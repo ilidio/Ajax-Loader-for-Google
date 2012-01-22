@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<string>css/indicator.css</string>
+		<key>Key</key>
+		<string>ajaxloader</string>
+		<key>Title</key>
+		<string>Ajax Loader</string>
+		<key>Titles</key>
+		<array>
+			<string>Indicador</string>
+			<string>Google</string>
+			<string>Circleball</string>
+			<string>Bouncing ball</string>
+			<string>Facebook</string>
+			<string>Flower</string>
+			<string>Kit</string>
+			<string>Roller</string>
+			<string>Snake</string>
+			<string>Wheel</string>
+			<string>3d Rotation</string>
+			<string>Arrows</string>
+			<string>Circleball 2</string>
+			<string>Radar</string>
+			<string>Static</string>
+			<string>Random</string>
+		</array>
+		<key>Type</key>
+		<string>ListBox</string>
+		<key>Values</key>
+		<array>
+			<string>css/indicator.css</string>
+			<string>css/google.css</string>
+			<string>css/circleball.css</string>
+			<string>css/bouncingball.css</string>
+			<string>css/facebook.css</string>
+			<string>css/flower.css</string>
+			<string>css/kit.css</string>
+			<string>css/roller.css</string>
+			<string>css/snake.css</string>
+			<string>css/wheel.css</string>
+			<string>css/3drotation.css</string>
+			<string>css/arrows.css</string>
+			<string>css/circleball1.css</string>
+			<string>css/radar.css</string>
+			<string>css/static.css</string>
+			<string>#random#</string>
+		</array>
+	</dict>
+</array>
+</plist>
