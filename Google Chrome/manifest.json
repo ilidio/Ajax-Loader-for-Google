@@ -1,7 +1,7 @@
 {
   "name": "Ajax Loader for Google™",
   "description": "Enhances Google pages by adding ajax loader (Animated GIF and Animated PNG - APNG).",
-  "version": "11.5.4",  
+  "version": "11.5.6",  
   "icons": { "16": "icon16.png",
              "48": "icon48.png",
             "128": "icon128.png" },

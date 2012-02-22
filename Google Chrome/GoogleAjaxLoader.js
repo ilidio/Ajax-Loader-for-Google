@@ -7,7 +7,7 @@ chrome.extension.sendRequest({localstorage: "google_reader_ajaxloader"}, functio
 	var jsApng ="";
 	var cssLoader = "";
 	var cssNode = document.createElement("style");
-	var selector = '.jfk-butterBar-info ,#viewer-details-toggle.details-loading, #loading-area .message-area-text-container, #loadingStatus, .vZ, .L4XNt,#lo,#sites-notice,#loadmessagehtml, #sites-status, .sites-status,.sites-notice,#sites-notice';
+	var selector = '#ID-loading,.jfk-butterBar-info ,#viewer-details-toggle.details-loading, #loading-area .message-area-text-container, #loadingStatus, .vZ, .L4XNt,#lo,#sites-notice,#loadmessagehtml, #sites-status, .sites-status,.sites-notice,#sites-notice';
 	var declaration = "";
 	var ajax_image = "";
 	var array_random = new Array(14); 	
@@ -211,14 +211,17 @@ chrome.extension.sendRequest({localstorage: "google_reader_ajaxloader"}, functio
 		obj[0].className;
 		obj = obj[0];
 		obj = obj.childNodes;
-		cssStr  += ".wb ."+obj[1].className+"{background-image:url('"+ajax_image+"')!important;background-position: 12px 0;background-repeat: no-repeat;padding: 2px 15px 2px 32px;}";	
+		cssStr  += "."+obj[1].className+"{background-image:url('"+ajax_image+"')!important;padding-left: 31px!important;padding: 2px 15px 2px 32px;background-repeat:no-repeat!important;background-position: 10px 0px!important;}";	
 		if(ajxloader == 'css/spinner_v2_0.css'){
-			cssStr  += ".wb ."+obj[1].className+"{background-size: 16px 16px;}";			
+			cssStr  += "."+obj[1].className+"{background-size: 16px 16px;}";			
 		}
 	}
 	// Orkut
 	cssStr +=".CRB .GRB{background-image:url('"+ajax_image+"')!important;background-position: 12px 1px;background-repeat: no-repeat;padding: 2px 15px 2px 32px;}";			
-	cssNode.innerHTML = cssStr;
+	// Google Analytics
+	cssStr +="#ID-loading{padding-left:27px;background-position-x:6px;background-position-y:3px;}";
+	// CSS - innerHTML
+	cssNode.innerHTML = cssStr;	
 	// Add CSS node
 	document.getElementsByTagName("head")[0].appendChild(cssNode);
 })

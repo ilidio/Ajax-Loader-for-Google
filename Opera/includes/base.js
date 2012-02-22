@@ -188,15 +188,16 @@ opera.extension.onmessage = function(event){
 			cssStr +="#loadingStatus{background-position:3px 3px!important;}";	 
 		// google plus
 		if(document.getElementById("notify-widget-pane")){		
+			// google plus
 			var obj=document.getElementById('notify-widget-pane').childNodes;
 			obj = obj[0];
 			obj = obj.childNodes;
 			obj[0].className;
 			obj = obj[0];
 			obj = obj.childNodes;
-			cssStr  += ".wb ."+obj[1].className+"{background-image:url('"+ajax_image+"')!important;background-position: 12px 0;background-repeat: no-repeat;padding: 2px 15px 2px 32px;}";
+			cssStr  += "."+obj[1].className+"{background-image:url('"+ajax_image+"')!important;padding-left: 31px!important;padding: 2px 15px 2px 32px;background-repeat:no-repeat!important;background-position: 10px 0px!important;}";	
 			if(ajxloader == 'css/spinner_v2_0.css'){
-				cssStr  += ".wb ."+obj[1].className+"{background-size: 16px 16px;}";			
+				cssStr  += "."+obj[1].className+"{background-size: 16px 16px;}";			
 			}			
 		}
 		// google plus fix
@@ -204,6 +205,9 @@ opera.extension.onmessage = function(event){
 		cssStr += "#notify-widget-pane{position: absolute!important;}";	// some fix	
 		// Orkut
 		cssStr +=".CRB .GRB{background-image:url('"+ajax_image+"')!important;background-position: 12px 1px;background-repeat: no-repeat;padding: 2px 15px 2px 32px;}";				 
+		// Google Analytics
+		cssStr +="#ID-loading{padding-left:27px;background-position-x:6px;background-position-y:3px;}";	
+		// CSS - innerHTML
 		cssNode.innerHTML = cssStr;		
 		// Add css node
 		document.body.appendChild(cssNode);
