@@ -21,7 +21,7 @@ opera.extension.onmessage = function(event){
 		var cssNode = document.createElement("style");
 		var cssStr="";
 		var cssLoader="";
-		var selector = '.jfk-butterBar-info,#viewer-details-toggle.details-loading, #loading-area .message-area-text-container, #loadingStatus, .vZ, .L4XNt,#lo,#sites-notice,#loadmessagehtml';
+		var selector = '#ID-loading,.jfk-butterBar-info,#viewer-details-toggle.details-loading, #loading-area .message-area-text-container, #loadingStatus, .vZ, .L4XNt,#lo,#sites-notice,#loadmessagehtml';
 		var declaration;	
 		var ajax_image = "";
 		var array_random = new Array(14); 		 	 	 	 	 	
