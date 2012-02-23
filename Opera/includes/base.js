@@ -206,7 +206,7 @@ opera.extension.onmessage = function(event){
 		// Orkut
 		cssStr +=".CRB .GRB{background-image:url('"+ajax_image+"')!important;background-position: 12px 1px;background-repeat: no-repeat;padding: 2px 15px 2px 32px;}";				 
 		// Google Analytics
-		cssStr +="#ID-loading{padding-left:27px;background-position-x:6px;background-position-y:3px;}";	
+		cssStr +="#ID-loading{padding-left:27px;background-position:6px 2px;}";	
 		// CSS - innerHTML
 		cssNode.innerHTML = cssStr;		
 		// Add css node
