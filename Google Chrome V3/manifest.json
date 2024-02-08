@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Ajax Loader for Google™",
   "description": "Enhances Google pages by adding ajax loader (Animated GIF and Animated PNG - APNG).",
-  "version": "12.0.0",
+  "version": "18.0.0",
   "icons": {
     "16": "icons/icon.png",
     "32": "icons/icon.png",
