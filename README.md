@@ -1,4 +1,4 @@
-## Ajax Loader for Google™: README.md
+## Ajax Loader for Google™:
 
 **Bring visual feedback to your Google experience with animated loading indicators!**
 
@@ -38,4 +38,3 @@ Please note that APNG loaders require Chrome version 60.0.3076.0 or later. If yo
 * You can replace the bracketed links with actual links to relevant screenshots or pages.
 * Consider adding keywords to the first few lines for better search visibility.
 
-**Please note:** This is just the text content formatted in markdown. You'll still need to add structural elements like headings, lists, and links manually or use a markdown editor for a more complete README file.
