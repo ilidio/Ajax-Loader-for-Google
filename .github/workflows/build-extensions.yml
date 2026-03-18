@@ -1,0 +1,59 @@
+name: Build Extensions
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build Chrome Extension
+      run: |
+        cd Chrome-Extension
+        zip -r ../chrome-extension.zip . -x "*.DS_Store*"
+
+    - name: Build Edge Extension
+      run: |
+        cd Edge-Extension
+        zip -r ../edge-extension.zip . -x "*.DS_Store*"
+
+    - name: Build Opera Extension
+      run: |
+        cd Opera-Chromium-Extension
+        zip -r ../opera-extension.zip . -x "*.DS_Store*"
+
+    - name: Build Safari Extension
+      run: |
+        cd Safari-Web-Extension
+        zip -r ../safari-extension.zip . -x "*.DS_Store*"
+
+    - name: Upload Chrome Extension
+      uses: actions/upload-artifact@v3
+      with:
+        name: chrome-extension
+        path: chrome-extension.zip
+
+    - name: Upload Edge Extension
+      uses: actions/upload-artifact@v3
+      with:
+        name: edge-extension
+        path: edge-extension.zip
+
+    - name: Upload Opera Extension
+      uses: actions/upload-artifact@v3
+      with:
+        name: opera-extension
+        path: opera-extension.zip
+
+    - name: Upload Safari Extension
+      uses: actions/upload-artifact@v3
+      with:
+        name: safari-extension
+        path: safari-extension.zip
