@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Build Chrome Extension
       run: |
@@ -35,25 +35,25 @@ jobs:
         zip -r ../safari-extension.zip . -x "*.DS_Store*"
 
     - name: Upload Chrome Extension
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: chrome-extension
         path: chrome-extension.zip
 
     - name: Upload Edge Extension
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: edge-extension
         path: edge-extension.zip
 
     - name: Upload Opera Extension
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: opera-extension
         path: opera-extension.zip
 
     - name: Upload Safari Extension
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: safari-extension
         path: safari-extension.zip
