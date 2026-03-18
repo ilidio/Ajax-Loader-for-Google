@@ -7,7 +7,7 @@ This extension enhances your Google web apps by adding animated loading indicato
 **Features:**
 
 * **Visualize loading processes:** Easily see when pages are loading or data is being processed.
-* **Choose your style:** Select between classic GIF and modern APNG loaders for a personalized touch.
+* **Choose your style:** Select from various animated loaders to personalize your experience.
 * **Lightweight and efficient:** Enjoy an enhanced experience without burdening your browser.
 
 **Supported Google Apps:**
@@ -20,11 +20,7 @@ This extension enhances your Google web apps by adding animated loading indicato
 2. Click on "More tools" and then "Extensions".
 3. Find "Ajax Loader for Google™" and click on "Details".
 4. Click on the "Options" button.
-5. Choose your preferred loader type (GIF or APNG).
-
-**APNG Support:**
-
-Please note that APNG loaders require Chrome version 60.0.3076.0 or later. If you're unsure about your version, you can check it by going to the "Help" menu in Chrome and clicking on "About Chrome".
+5. Choose your preferred loader style.
 
 **We're always looking for feedback!**
 

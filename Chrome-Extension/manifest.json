@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Ajax Loader for Google™",
+  "description": "Enhances Google pages by adding an animated ajax loader.",
+  "version": "20.0.0",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "js": ["./content.js"],
+      "matches": ["*://*.google.com/*"],
+      "run_at": "document_end"
+    }
+  ]
+}
