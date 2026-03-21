@@ -14,23 +14,24 @@ This extension enhances your Google web apps by adding animated loading indicato
 
 * Gmail
 
+**Supported Browsers:**
+
+* Chrome
+* Firefox
+* Edge
+* Opera
+* Safari
+
 **Changing the Loader:**
 
-1. Open the Chrome menu (three dots in the top right corner).
-2. Click on "More tools" and then "Extensions".
-3. Find "Ajax Loader for Google™" and click on "Details".
-4. Click on the "Options" button.
-5. Choose your preferred loader style.
+1. Open your browser's extension settings (e.g., Chrome: three dots > Extensions; Firefox: Add-ons and Themes).
+2. Find "Ajax Loader for Google™" and click on "Details" or "Options".
+3. Choose your preferred loader style.
 
 **We're always looking for feedback!**
 
-* Leave a review on the Chrome Web Store to let us know what you think.
+* Leave a review on your browser's extension store to let us know what you think.
 * Report any issues or suggest new features through the extension's options page.
 
 **Enjoy a more dynamic and visual Google experience with Ajax Loader for Google™!**
-
-**Additional Notes:**
-
-* You can replace the bracketed links with actual links to relevant screenshots or pages.
-* Consider adding keywords to the first few lines for better search visibility.
 

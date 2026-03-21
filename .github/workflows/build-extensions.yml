@@ -34,6 +34,11 @@ jobs:
         cd Safari-Web-Extension
         zip -r ../safari-extension.zip . -x "*.DS_Store*"
 
+    - name: Build Firefox Extension
+      run: |
+        cd Firefox-Extension
+        zip -r ../firefox-extension.zip . -x "*.DS_Store*"
+
     - name: Upload Chrome Extension
       uses: actions/upload-artifact@v4
       with:
@@ -57,3 +62,9 @@ jobs:
       with:
         name: safari-extension
         path: safari-extension.zip
+
+    - name: Upload Firefox Extension
+      uses: actions/upload-artifact@v4
+      with:
+        name: firefox-extension
+        path: firefox-extension.zip
