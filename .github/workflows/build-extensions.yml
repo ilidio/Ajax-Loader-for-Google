@@ -17,27 +17,27 @@ jobs:
     - name: Build Chrome Extension
       run: |
         cd Chrome-Extension
-        zip -r ../chrome-extension.zip . -x "*.DS_Store*"
+        zip -r ../chrome-extension.zip . -x "*.DS_Store*" "*.zip" "*.map"
 
     - name: Build Edge Extension
       run: |
         cd Edge-Extension
-        zip -r ../edge-extension.zip . -x "*.DS_Store*"
+        zip -r ../edge-extension.zip . -x "*.DS_Store*" "*.zip" "*.map"
 
     - name: Build Opera Extension
       run: |
         cd Opera-Chromium-Extension
-        zip -r ../opera-extension.zip . -x "*.DS_Store*"
+        zip -r ../opera-extension.zip . -x "*.DS_Store*" "*.zip" "*.map"
 
     - name: Build Safari Extension
       run: |
         cd Safari-Web-Extension
-        zip -r ../safari-extension.zip . -x "*.DS_Store*"
+        zip -r ../safari-extension.zip . -x "*.DS_Store*" "*.zip" "*.map"
 
     - name: Build Firefox Extension
       run: |
         cd Firefox-Extension
-        zip -r ../firefox-extension.zip . -x "*.DS_Store*"
+        zip -r ../firefox-extension.zip . -x "*.DS_Store*" "*.zip" "*.map"
 
     - name: Upload Chrome Extension
       uses: actions/upload-artifact@v4
